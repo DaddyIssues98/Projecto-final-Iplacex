@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Inicio de sesión{% endblock %}
+
+{% block content %}
+    <div class="card">
+        <h2 class="text-center">Inicio de sesión</h2>
+        <form method="POST" action="{{ url_for('ejercicio2') }}">
+            <label for="usuario">Ingresa tu nombre</label>
+            <input type="text" id="usuario" name="usuario" required value="{{ request.form.get('usuario', '') }}">
+
+            <label for="contrasena">Ingresa tu contraseña</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+
+            <div class="text-center">
+                <button type="submit" class="btn-submit">Verificar</button>
+            </div>
+        </form>
+
+        {% if mensaje is defined %}
+        <div class="resultado text-left">
+            <p class="{% if exito %}text-exito{% else %}text-error{% endif %}">{{ mensaje }}</p>
+        </div>
+        {% endif %}
+
+        <div class="text-center">
+            <a href="{{ url_for('index') }}" class="btn-volver">Volver al Menú Principal</a>
+        </div>
+    </div>
+{% endblock %}

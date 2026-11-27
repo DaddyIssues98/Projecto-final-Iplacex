@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+
+.menu-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.btn-menu {
+    background-color: #000000; 
+    color: #ffffff; 
+    text-decoration: none;
+    padding: 60px 50px;
+    font-size: 22px;
+    text-align: center;
+    border: 2px solid #000000;
+    transition: all 0.3s ease;
+}
+
+.btn-menu:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 40px;
+    border: 1px solid #dddddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #666666;
+    font-size: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fafafa;
+}
+
+.btn-submit {
+    margin-top: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #333333;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.resultado {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #eeeeee;
+}
+
+.resultado p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #333333;
+}
+
+.text-exito {
+    font-weight: bold;
+    color: #000000;
+}
+
+.text-error {
+    font-weight: bold;
+    color: #ff0000; 
+}
+
+.btn-volver {
+    display: inline-block;
+    margin-top: 25px;
+    color: #666666;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.btn-volver:hover {
+    color: #000000;
+}
+
+.error-msg {
+    background-color: #ffcccc;
+    color: #cc0000;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 4px;
+}
